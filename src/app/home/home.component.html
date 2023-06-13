@@ -1,0 +1,130 @@
+<div class="card">
+    <div class="card-container">
+      <div class="block h-50rem font-bold text-center p-0 mb-0">
+        <img src="../assets/img.png" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="flex card-container ">
+      <div class="flex-1 text-left  text-white font-bold text-center p-4">
+        <div class="about">
+          <h2>About Vidyalankar</h2>
+          <p>Endowed with a gift of good academic career, C. S. Deshpande completed his Inter Science Examination in 1950
+            from Willingdon College, Sangli with a spectacular performance by standing FIRST in the University, winning
+            all the University prizes and scholarships in all the subjects and creating records in Mathematics and in
+            Aggregate total marks. (The 2nd rank student was behind him by as many as 70 marks i.e. by 10%).</p>
+          <br>
+          <p>After completing his B.E. (Electronics and Telecom.) from the College of Engineering, Pune, he joined the
+            prestigious T.I.F.R. (Tata Institute of Fundamental Research) in 1954 as a research scholar in Nuclear
+            Particle Accelerator Section. His name was specially recommended by his principal to Dr. Homi J Bhabha, the
+            noted scientist and the founder of TIFR In the following year, he appeared at the I.E.S. ( Indian Engineering
+            Services) Examination and secured the top rank in this All India Competitive examination. He was posted in the
+            I.R.S.E. (Indian Railway)</p>
+          <br>
+          <button><a href="#" style="text-decoration:none; color: aliceblue;">READ MORE </a></button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-container">
+      <div class="block font-bold text-center p-4 mb-3">
+        <div class="counsellor">
+          <h2>Current Openings</h2>
+          <h3>Counsellor (MHT-CET,NEET & IIT JEE)</h3>
+          <p class="para">Counsel students on Vidyalankar's course offering and convert enquiries to enrolments.
+            Contribute to the overall sales target by maintaining a constant communication channel with students in person
+            and through the phone, email, and WhatsApp. Work with the Centre Coordinator and Sales Manager to execute BTL
+            activities in the centre and surrounding schools and colleges.</p>
+          <ul>
+            <li>Graduates</li>
+            <li>Min. 70% in std. X</li>
+            <li>Excellent engish communication skills</li>
+            <li>Proficient in Sales & Counselling for Educational Programs</li>
+            <li>2+ years relevant experience</li>
+            <li>Location: Central & Western line</li>
+          </ul>
+          <div class="btn">
+            <button class="btn1"><a href="#" style="text-decoration:none; color: aliceblue;">READ MORE </a></button>
+            <button type="button" class="btn2 btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Apply Now
+            </button>
+            
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-container">
+      <div class="block font-bold text-center p-4 mb-3">
+        <div class="counsellor">
+          <h2>Accounts & Taxation</h2>
+          <p class="para">Preparation of Balance Sheet, Profit and loss, Directors Report, Cash Flow Statements,
+            Finalization of accounts, Preparation of Details for Tax Audit. Maintenance of Bank Book, Cash Book, Journal
+            Registers, Petty Cash Book, Ledgers, Bank Reconciliation Statements, Fees Collection Registers, etc. Timely
+            deduction and Payment of TDS, GST, EPF, PT, IT, etc. and filing of various Returns i.e. TDS, GST, EPF, PT, IT,
+            ROC etc.</p>
+          <ul>
+            <li>B. Com/M. Com/CA-Inter graduates</li>
+            <li>Min. 70% in std. X</li>
+            <li>5+ years experience in taxation, filing GST and TDS returns</li>
+            <li>Location: Dadar</li>
+          </ul>
+          <div class="btn">
+            <button class="btn1"><a href="#" style="text-decoration:none; color: aliceblue;">READ MORE </a></button>
+            <!-- <button class="btn2" id="myModal" (click)="openModel()" data-bs-toggle="modal" data-bs-target="#myModal">Apply Now</button> -->
+            <button type="button" class="btn2 btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Apply Now
+            </button>
+          </div>
+  
+          
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Please fill the details</h4>
+          <button type="button" class="btn-close" (click)="closeModel()" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="registerForm"  (ngSubmit)="registerProcess()">
+            <div class="mb-3 mt-3">
+              <input type="text" class="form-control form-control-lg" formControlName="name"  placeholder="Your Name*" name="name">
+            </div>
+            <div class="mb-3 mt-3">
+              <input type="text" class="form-control form-control-lg" formControlName="number"  placeholder="Your Mobile No*" name="number">
+            </div>
+            <div class="mb-3 mt-3">
+              <input type="email" class="form-control form-control-lg" formControlName="email" placeholder="Your Email ID*" name="email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control form-control-lg" formControlName="role" placeholder="Your Role*" name="role">
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-danger" (click)="closeModel()" data-bs-dismiss="modal">Submit</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
